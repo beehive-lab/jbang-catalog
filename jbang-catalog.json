@@ -1,0 +1,8 @@
+{
+  "aliases": {
+    "gpullama3": {
+      "script-ref": "https://raw.githubusercontent.com/beehive-lab/GPULlama3.java/main/LlamaTornadoCli.java",
+      "description": "GPU-accelerated LLM inference for Java, powered by TornadoVM"
+    }
+  }
+}
