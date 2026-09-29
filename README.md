@@ -8,27 +8,28 @@ JBang catalog for [beehive-lab](https://github.com/beehive-lab) projects.
 # Install JBang (if not already installed)
 curl -Ls https://sh.jbang.dev | bash -s - app setup
 
-# Run GPULlama3.java CLI
-jbang gpullama3@beehive-lab -m model.gguf -p "Tell me a joke"
+# Run the jitllm CLI
+jbang jitllm@beehive-lab -m model.gguf -p "Tell me a joke"
 
 # Or install it as a command
-jbang app install gpullama3@beehive-lab
-gpullama3 -m model.gguf -p "Hello!"
+jbang app install jitllm@beehive-lab
+jitllm -m model.gguf -p "Hello!"
 ```
 
 ## Available Aliases
 
 | Alias | Description |
 |-------|-------------|
-| `gpullama3` | GPU-accelerated LLM inference for Java, powered by TornadoVM |
+| `jitllm` | GPU-accelerated LLM inference for Java, powered by TornadoVM |
+| `gpullama3` | Former name of `jitllm`; runs the same script |
 
 ## Requirements
 
-- Java 21+
-- TornadoVM (for GPU acceleration)
+- Java 22+
+- A TornadoVM SDK built for that JDK, with `TORNADOVM_HOME` pointing at it
 
 ## Links
 
-- [GPULlama3.java](https://github.com/beehive-lab/GPULlama3.java)
+- [jitllm](https://github.com/beehive-lab/jitllm)
 - [TornadoVM](https://github.com/beehive-lab/TornadoVM)
 - [JBang](https://www.jbang.dev/)
