@@ -1,8 +1,12 @@
 {
   "aliases": {
-    "gpullama3": {
-      "script-ref": "https://raw.githubusercontent.com/beehive-lab/GPULlama3.java/main/LlamaTornadoCli.java",
+    "jitllm": {
+      "script-ref": "https://raw.githubusercontent.com/beehive-lab/jitllm/main/JitllmCli.java",
       "description": "GPU-accelerated LLM inference for Java, powered by TornadoVM"
+    },
+    "gpullama3": {
+      "script-ref": "https://raw.githubusercontent.com/beehive-lab/jitllm/main/JitllmCli.java",
+      "description": "Former name of jitllm, kept so existing commands keep working"
     }
   }
 }
